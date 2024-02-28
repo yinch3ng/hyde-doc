@@ -1,0 +1,25 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'demosite'
+theme = 'hyde'
+disableKinds = ['sitemap', 'rss']
+
+[params]
+  author = 'Yin'
+  description = 'drafts'
+
+[taxonomies]
+  tag = 'tags'
+
+[menus]
+  main = [
+      {name = 'Tags', url = '/Tags/'},
+  ]
+
+[permalinks]
+  '/' = '/:title/'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
